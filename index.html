@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b2d">
+  <meta name="description" content="Rickie's contact page. Connect directly on WhatsApp.">
+  <title>Rickie's Contact Manager</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1220; --panel:#121e31; --muted:#9aa9bd; --text:#f4f7fb; --accent:#25d366; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100vh; display:grid; place-items:center; padding:24px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:var(--text);
+      background: radial-gradient(circle at 50% 0%, #203b58 0, transparent 48%), var(--bg);
+    }
+    main {
+      width:min(100%, 430px); padding:38px 28px 30px; text-align:center;
+      background:linear-gradient(160deg, rgba(27,44,67,.98), rgba(15,26,43,.98));
+      border:1px solid rgba(255,255,255,.09); border-radius:28px;
+      box-shadow:0 24px 80px rgba(0,0,0,.38);
+    }
+    .mark {
+      width:76px; height:76px; margin:0 auto 20px; display:grid; place-items:center;
+      border-radius:24px; background:rgba(37,211,102,.13); color:var(--accent);
+      font-size:28px; font-weight:800; letter-spacing:-2px;
+      border:1px solid rgba(37,211,102,.22);
+    }
+    .eyebrow { margin:0 0 9px; color:#a9b9cc; font-size:11px; font-weight:700; letter-spacing:2.4px; text-transform:uppercase; }
+    h1 { margin:0; font-size:32px; letter-spacing:-1.2px; }
+    .intro { margin:12px auto 27px; max-width:290px; color:var(--muted); font-size:15px; line-height:1.65; }
+    .contact {
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      padding:15px 17px; margin:0 0 12px; border-radius:15px;
+      background:rgba(255,255,255,.055); border:1px solid rgba(255,255,255,.08);
+      color:var(--text); font-size:16px; font-weight:650; text-decoration:none;
+    }
+    .contact svg { width:20px; height:20px; flex:none; }
+    .whatsapp {
+      display:flex; justify-content:center; align-items:center; gap:10px;
+      width:100%; min-height:54px; margin-top:18px; padding:15px 20px;
+      border:0; border-radius:15px; background:var(--accent); color:#062b15;
+      font-size:16px; font-weight:800; text-decoration:none;
+      transition:transform .15s ease, filter .15s ease;
+    }
+    .whatsapp:hover { transform:translateY(-2px); filter:brightness(1.05); }
+    .whatsapp svg { width:21px; height:21px; }
+    .copy {
+      margin-top:13px; padding:10px 14px; border:0; background:transparent;
+      color:#b7c5d6; font:inherit; font-size:13px; cursor:pointer;
+    }
+    .copy:hover { color:white; }
+    .note { min-height:18px; margin:3px 0 0; color:#8fa1b7; font-size:12px; }
+    footer { margin-top:28px; color:#71839a; font-size:11px; letter-spacing:.4px; }
+    @media (max-width:380px) { main { padding:32px 20px 26px; } h1 { font-size:29px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">R</div>
+    <p class="eyebrow">Personal contact</p>
+    <h1>Let's connect.</h1>
+    <p class="intro">Good conversations start with a simple hello. Reach me directly on WhatsApp.</p>
+
+    <div class="contact" aria-label="WhatsApp number">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.2-5.3A8.4 8.4 0 1 1 21 11.5Z"/>
+        <path d="M8.8 8.2c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .6.5.9 1.2 1.6 2.1 2.1.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.2.1.3.3.3.5 0 .3-.2 1-.6 1.3-.4.4-1 .6-1.6.5-1-.1-2.3-.7-3.6-1.8-1.1-1-1.9-2.2-2.1-3.2-.2-.9.1-1.9.5-2.6Z"/>
+      </svg>
+      +255 758 588 285
+    </div>
+
+    <a class="whatsapp" href="https://wa.me/255758588285" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.2 1.6 6L0 24l6.4-1.7a11.8 11.8 0 0 0 5.7 1.5h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.2-6.2-3.5-8.5ZM12.1 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 1 1 8.4 4.7Zm5.4-7.3c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.8-3.3-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.9 3.4.8.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.2-.3-.3-.6-.5Z"/>
+      </svg>
+      Message on WhatsApp
+    </a>
+
+    <button class="copy" id="copyButton" type="button">Copy phone number</button>
+    <p class="note" id="copyStatus" role="status" aria-live="polite"></p>
+    <footer>RICKIE'S CONTACT MANAGER</footer>
+  </main>
+  <script>
+    const phone = "+255 758 588 285";
+    const copyButton = document.getElementById("copyButton");
+    const copyStatus = document.getElementById("copyStatus");
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(phone);
+        copyStatus.textContent = "Number copied.";
+      } catch {
+        copyStatus.textContent = "Please copy the number shown above.";
+      }
+    });
+  </script>
+</body>
+</html>
